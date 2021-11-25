@@ -1,0 +1,355 @@
+@media screen and (max-width: 800px) {
+    .content {
+        width: 90vw !important;
+    }
+    .header {
+        flex-direction: column !important;
+        margin-bottom: 4vh !important;
+    }
+    .home {
+        background: linear-gradient(-80deg, rgba(43, 45, 66, 1) 30%, rgba(141, 153, 174, 1) 75%) !important;
+    }
+    .navlinkBox-small {
+        height: 7vh !important;
+    }
+    .navlink {
+        width: 6vh !important;
+        height: 6.5vh !important;
+        border-radius: 4vh !important;
+        position: absolute !important;
+        bottom: 1vh !important;
+    }
+    .navlink:focus {
+        border: 4px solid #2b2d42 !important;
+        bottom: 2vh !important;
+    }
+    .defPic {
+        width: 90vw !important;
+    }
+    .header-div {
+        width: 90vw !important;
+    }
+    .header-div h2 {
+        font-size: 7vw !important;
+    }
+    .header-div button {
+        width: 70vw !important;
+        height: 10vw !important;
+    }
+    .skil-line-out {
+        width: 60% !important;
+    }
+    .contact-box {
+        width: 90vw !important;
+        height: 10vh !important;
+    }
+    .contact-box h3 {
+        font-size: 3.5vw !important;
+        left: 15vw !important;
+        top: 1.5vh !important;
+    }
+}
+
+.contact-box img {
+    width: 7vh !important;
+}
+
+.contact-box button {
+    width: 25vw !important;
+    height: 5vh !important;
+    top: 2.5vh !important;
+}
+
+
+/* navbar codes */
+
+.navbar {
+    background-color: #2b2d42;
+    height: 100vh;
+    display: grid;
+    position: fixed;
+    left: 0%;
+    top: 0in;
+    grid-template-rows: 40% 50%;
+}
+
+.navbar img {
+    border-radius: 50%;
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.navlinkBox {
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    gap: 5px;
+    padding: 3px;
+}
+
+.navlinkBox-small {
+    background-color: #2b2d42;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10vw;
+}
+
+.navlink {
+    color: #f9f9f9;
+    padding-left: 5px;
+    text-decoration: none;
+    display: flex;
+    margin: 0px 5px;
+    justify-content: left;
+    align-items: center;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.navlink:hover {
+    background-color: #8d99ae;
+}
+
+.navlink:focus {
+    background-color: #edf2f4;
+    color: #2b2d42;
+}
+
+.navbar-icon {
+    font-size: larger;
+    margin: 0px 1vw;
+}
+
+
+/* home page codes */
+
+.download-resume {
+    width: 20vw;
+    height: 4vw;
+    border-radius: 1vw;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+    font-size: large;
+    color: #8d99ae;
+    opacity: 0;
+    animation: appear linear forwards .6s;
+    animation-delay: 1s;
+}
+
+.download-resume:hover {
+    margin-top: -.5vh;
+    box-shadow: 0 .5vh 1vh #2b2d42;
+    color: #2b2d42;
+}
+
+.download-resume a {
+    text-decoration: none;
+}
+
+.content {
+    width: 70vw;
+    position: absolute;
+    overflow-x: hidden;
+    height: 100vh;
+    right: 0in;
+    min-height: 100vh;
+    height: auto;
+    padding: 5vw;
+}
+
+.home {
+    overflow-y: hidden;
+    background: linear-gradient(-130deg, rgba(43, 45, 66, 1) 30%, rgba(141, 153, 174, 1) 75%);
+}
+
+.defPic {
+    width: 35vw;
+    border-radius: 1vw;
+    animation: appear linear .6s;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 5vh 0;
+}
+
+.header-div {
+    width: 30vw;
+}
+
+.header-div h2,
+.header-div h4 {
+    color: #edf2f4;
+    opacity: 0;
+    animation: appear linear forwards .6s;
+}
+
+.header-div h2 {
+    animation-delay: .3s;
+    font-size: 3vw;
+}
+
+.header-div h4 {
+    animation-delay: .6s;
+}
+
+
+/* about me pages */
+
+.about {
+    background: linear-gradient(-130deg, rgba(43, 45, 66, 1) 30%, rgba(141, 153, 174, 1) 70%);
+}
+
+.about-header img {
+    width: 70%;
+}
+
+
+/* this is for skills page */
+
+.skills {
+    background: #edf2f4
+}
+
+.skill-box {
+    width: 90%;
+    height: 10vh;
+    background: #2b2d42;
+    border: 1px solid;
+    margin: 1vh auto;
+    display: flex;
+    border-radius: 1vh;
+    align-content: center;
+    padding: 0 2vw;
+    position: relative;
+}
+
+.skill-text {
+    display: grid;
+    grid-template-columns: 20% 75% 5%;
+    width: 90%;
+}
+
+.skill-box h3 {
+    text-align: left;
+    padding-left: 1vw;
+    color: #8d99ae;
+}
+
+.skill-box h4 {
+    position: absolute;
+    top: 0vh;
+    right: 2vw;
+    color: #edf2f4;
+}
+
+.skill-box img {
+    width: 5vh;
+}
+
+.skil-line-out {
+    width: 70%;
+    height: 2vh;
+    position: absolute;
+    top: 4vh;
+    left: 20%;
+    border-radius: .3vh;
+    background-color: #8d99ae54;
+}
+
+.skil-line {
+    height: 100%;
+}
+
+
+/* contact page codes */
+
+.contacts {
+    background: linear-gradient(130deg, rgba(141, 153, 174, 1) 35%, rgba(237, 242, 244, 1) 100%);
+}
+
+.contact-box {
+    width: 65vw;
+    height: 5vw;
+    padding-left: 1vw;
+    border-radius: 1vw;
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+    background-color: #2b2d42;
+    position: relative;
+    opacity: 0;
+    animation: appear linear forwards .6s;
+}
+
+.contact-box h3 {
+    color: #edf2f4;
+    position: absolute;
+    top: 0vw;
+    left: 20vw;
+}
+
+.contact-box img {
+    width: 4.5vw;
+    margin-top: 5px;
+}
+
+.contact-box button {
+    width: 10vw;
+    height: 2vw;
+    border: none;
+    background-color: #8d99ae;
+    border-radius: 1vh;
+    position: absolute;
+    top: 1.5vw;
+    right: 1vw;
+    transition: .4s;
+}
+
+.contact-box button:hover {
+    background-color: #edf2f4;
+    cursor: pointer;
+}
+
+
+/* experiences codes */
+
+.experiences {
+    background: linear-gradient(-130deg, rgba(43, 45, 66, 1) 40%, rgba(141, 153, 174, 1) 70%);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #8d99ae;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #2b2d42;
+    border-radius: 10px;
+}
