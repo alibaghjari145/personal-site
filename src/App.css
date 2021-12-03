@@ -7,7 +7,7 @@
         margin-bottom: 4vh !important;
     }
     .home {
-        background: linear-gradient(-80deg, rgba(43, 45, 66, 1) 30%, rgba(141, 153, 174, 1) 75%) !important;
+        background: linear-gradient(-80deg, #2b2d42 30%, rgba(141, 153, 174, 1) 75%) !important;
     }
     .navlinkBox-small {
         height: 7vh !important;
@@ -18,10 +18,12 @@
         border-radius: 4vh !important;
         position: absolute !important;
         bottom: 1vh !important;
+        transition: .4s !important;
     }
     .navlink:focus {
-        border: 4px solid #2b2d42 !important;
-        bottom: 2vh !important;
+        box-shadow: 0 -.5vw 0 1vw #2b2d42 !important;
+        bottom: 2.5vh !important;
+        transform: rotate(360deg);
     }
     .defPic {
         width: 90vw !important;
