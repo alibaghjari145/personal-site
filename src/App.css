@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+* {
+    font-family: 'PT Serif', serif;
+}
+
 @media screen and (max-width: 800px) {
     .content {
         width: 90vw !important;
@@ -160,9 +165,9 @@
     overflow-x: hidden;
     height: 100vh;
     right: 0in;
-    min-height: 100vh;
+    min-height: 95vh;
     height: auto;
-    padding: 5vw;
+    padding: 5vh 5vw 0 5vw;
 }
 
 .home {
@@ -190,6 +195,8 @@
 .header-div h4 {
     color: #edf2f4;
     opacity: 0;
+    font-weight: 400;
+    text-justify: auto;
     animation: appear linear forwards .6s;
 }
 
