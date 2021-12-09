@@ -47,6 +47,7 @@ class Skills extends React.Component {
         const { box } = this.state;
         return (
             <div className='skills content'>
+                <h2>The most importants:</h2>
                 {box.map(
                     box => (<SkillBox
                         key={box.id}

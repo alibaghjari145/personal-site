@@ -18,8 +18,7 @@ const Home = (params) => {
             dir='ltr'
             pic={Pic}
             title='Hello!'
-            text='This is my personal page that let you know more about me! 
-            and you can download my resume from the button below'
+            text='This is my personal page that lets you know more about me! And you can download my resume from the button below.'
             btn={Btn}
             />
         </div>
