@@ -1,25 +1,26 @@
 import { faAddressCard, faHome, faListOl, faPhoneAlt, faTools } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import me from '../img/me.jpg'
 
 const Navbar = () => {
+    const myUrl = window.location.href;
     const width = window.innerWidth;
     if(width>576){
         return (
             <div className='navbar' style={{width:width>768?'20vw':'25vw'}}>
                 <img style={{visibility:width>992?'visible':'hidden'}} src={me} alt="ali baghjari" />
                 <div className="navlinkBox">
-                    <NavLink strict className='navlink' to='/'>
+                    <Link isActive={()=>true} strict className='navlink' to='/'>
                         <FontAwesomeIcon className='navbar-icon' icon={faHome} />
                         Home
-                    </NavLink>
+                    </Link>
                     <NavLink strict className='navlink' to='/about'>
                         <FontAwesomeIcon className='navbar-icon' icon={faAddressCard} />
                         About
                     </NavLink>
-                    <NavLink className='navlink' to='/skills'>
+                    <NavLink isActive={()=>true} className='navlink' to='/skills'>
                         <FontAwesomeIcon className='navbar-icon' icon={faTools} />
                         Skills
                     </NavLink>

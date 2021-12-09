@@ -8,7 +8,7 @@ import react from '../img/react.svg'
 import other from '../img/other.svg'
 
 export const ExpData = [{
-        id: 0,
+        id: 4,
         pic: < img className = 'defPic'
         src = { personal }
         alt = "" / > ,
@@ -45,7 +45,7 @@ export const ExpData = [{
 
 export const AboutData=[
     {
-        id:0,
+        id:4,
         img: <img className='defPic' src={about} alt="about me" />,
         dir:'',
         title:'Welcome',

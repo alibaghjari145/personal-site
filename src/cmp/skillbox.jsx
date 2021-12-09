@@ -6,8 +6,7 @@ const SkillBox = (props) => {
     const [persent, setpersent] = useState(0);
 
    
-    useEffect(() => {
-        
+    useEffect(() => { 
       setTimeout(()=>{
         let defrence= Boolean(props.pers>persent)
 
@@ -24,8 +23,8 @@ const SkillBox = (props) => {
                 <h3 style={{visibility:width>768?'visible':'hidden'}}>
                     {props.title}
                 </h3>
-                <div className="skil-line-out">
-                    <div style={{ backgroundColor: props.color, width: `${persent}%` }} className="skil-line">
+                <div className="skill-line-out">
+                    <div style={{ backgroundColor: props.color, width: `${persent}%` }} className="skill-line">
                     </div>
                 </div>
                 <h4>{persent}%</h4>

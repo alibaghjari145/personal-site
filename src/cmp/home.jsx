@@ -5,6 +5,7 @@ import dev from './../img/proud.svg'
 import TextAndPic from './text&pic'
 
 const Home = (params) => {
+    
     const [Btn, setBtn] = useState( <Link to={resume} target="_blank" download>
     <button className='download-resume'>
        DownLoad my resume
