@@ -21,9 +21,8 @@
     .navlinkBox-small {
         height: 7vh !important;
     }
-    .navlink:hover,
-    .disactive:hover {
-        background-color: red !important;
+    .skill-box {
+        width: 95% !important;
     }
     .navlink {
         width: 6vh !important;
@@ -32,6 +31,10 @@
         position: absolute !important;
         bottom: .5vh !important;
         transition: .7s !important;
+    }
+    .disactive {
+        background-color: #2b2d42 !important;
+        color: #edf2f4 !important;
     }
     .activeNavlink {
         box-shadow: 0 0 0 1vw #2b2d42 !important;
@@ -51,8 +54,12 @@
         width: 70vw !important;
         height: 10vw !important;
     }
-    .skil-line-out {
-        width: 60% !important;
+    .skill-line-out {
+        width: 70% !important;
+        left: 16% !important;
+    }
+    .skill-box h4 {
+        top: 1vh !important;
     }
     .contact-box {
         width: 90vw !important;
@@ -60,7 +67,7 @@
     }
     .contact-box h3 {
         font-size: 3.5vw !important;
-        left: 15vw !important;
+        left: 18vw !important;
         top: 1.5vh !important;
     }
     .navbar-icon {
@@ -126,14 +133,13 @@
     transition: .3s;
 }
 
-.navlink:hover,
-.disactive:hover {
-    background-color: #8d99ae !important;
+.disactive {
+    color: #f9f9f9;
+    background-color: #2b2d42;
 }
 
-.disactive {
-    color: #f9f9f9 !important;
-    background-color: #2b2d42 !important;
+.disactive:hover {
+    background-color: #8d99ae;
 }
 
 .activeNavlink,
