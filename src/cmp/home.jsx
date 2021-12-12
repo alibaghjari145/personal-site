@@ -6,12 +6,12 @@ import TextAndPic from './text&pic'
 
 const Home = (params) => {
     
-    const [Btn, setBtn] = useState( <Link to={resume} target="_blank" download>
+    const [Btn] = useState( <Link to={resume} target="_blank" download>
     <button className='download-resume'>
        DownLoad my resume
     </button>
     </Link>)
-    const [Pic, setPic] = useState(<img className='defPic' src={dev} alt="developer"/>)
+    const [Pic] = useState(<img className='defPic' src={dev} alt="developer"/>)
     return (
         <div className='home content'>
            
