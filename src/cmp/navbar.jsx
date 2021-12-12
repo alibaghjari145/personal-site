@@ -17,7 +17,7 @@ const Navbar = () => {
             <div  className='navbar ' style={{width:width>768?'20vw':'25vw'}}>
                 <img style={{visibility:width>992?'visible':'hidden'}} src={me} alt="ali baghjari" />
                 <div className="navlinkBox">
-                    <Link  className={`navlink ${myUrl.endsWith('.app')?'activeNavlink':'disactive'}`} to='/'>
+                    <Link  className={`navlink ${myUrl.endsWith('/home')?'activeNavlink':'disactive'}`} to='/home'>
                         <FontAwesomeIcon className='navbar-icon' icon={faHome} />
                         Home
                     </Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
                         <FontAwesomeIcon className='navbar-icon' icon={faListOl} />
                         Experiences
                     </NavLink>
-                    <NavLink className={`navlink ${myUrl.endsWith('/contacts')?'activeNavlink':''}`} to='/contacts'>
+                    <NavLink className={`navlink ${myUrl.endsWith('/contacts')?'activeNavlink':'disactive'}`} to='/contacts'>
                         <FontAwesomeIcon className='navbar-icon' icon={faPhoneAlt} />
                         Contact
                     </NavLink>
@@ -46,7 +46,7 @@ const Navbar = () => {
         return (
             <div className="small-navbar">
                 <div className="navlinkBox-small">
-                    <NavLink style={{left:'5vw'}}  className={`navlink ${myUrl.endsWith('.app')?'activeNavlink':'disactive'}`} to='/'>
+                    <NavLink style={{left:'5vw'}}  className={`navlink ${myUrl.endsWith('/home')?'activeNavlink':'disactive'}`} to='/home'>
                         <FontAwesomeIcon className='navbar-icon' icon={faHome} />
                     </NavLink>
                     <NavLink style={{left:'25vw'}}  className={`navlink ${myUrl.endsWith('/about')?'activeNavlink':'disactive'}`} to='/about'>
